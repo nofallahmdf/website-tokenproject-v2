@@ -1,0 +1,105 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+    max-height: 4px
+}
+
+@media screen and (min-width:480px) {
+    .mobile-only {
+        display: none
+    }
+}
+
+::-webkit-scrollbar-track {
+    background: #000
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 40px
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(255, 255, 255, 0)
+}
+
+.nav_dropdown-community-menu,
+.nav_dropdown-company-menu,
+.nav_dropdown-developers-menu,
+.nav_dropdown-resources-menu {
+    will-change: opacity
+}
+
+.blog-list_heading {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+
+.splide__pagination {
+    position: relative;
+    bottom: 20px!important;
+    z-index: 100!important;
+    display: flex!important;
+    width: 166px!important;
+    height: 18px!important;
+    margin: 0 auto!important;
+    padding: 3px 6px!important;
+    justify-content: center!important;
+    align-items: center!important;
+    gap: 6px!important;
+    border-radius: 32px!important;
+    background-color: hsla(0, 0%, 100%, .1)!important;
+    list-style-type: none!important
+}
+
+.splide__pagination li {
+    position: relative!important;
+    display: flex!important;
+    max-height: 6px!important;
+    margin-bottom: 0!important;
+    padding: 3px 0!important;
+    justify-content: center!important;
+    align-items: center!important;
+    flex: 0 1 auto!important
+}
+
+.splide__pagination__page {
+    width: 6px!important;
+    height: 6px!important;
+    padding: 0!important;
+    border-radius: 50%!important;
+    background-color: hsla(0, 0%, 100%, .28)!important;
+    transition: background-color .2s!important
+}
+
+.splide__pagination__page.is-active {
+    width: 16px!important;
+    border-radius: 16px!important;
+    background-color: #fff!important
+}
+
+#main-slider .splide__slide .home-hero_progress-label-bg {
+    width: 0%;
+    transition: width linear
+}
+
+#main-slider .splide__slide.is-active .home-hero_progress-label-bg {
+    width: 100%;
+    transition: width 10s linear
+}
+
+.splide .w-background-video--control {
+    display: none!important
+}
+
+.home-hero_progress-label-text::after {
+    content: " ✦ 10"
+}
+
+#main-slider .splide__slide .spotlight-new_heading,
+.button,
+.home-hero_gradient {
+    will-change: transform
+}
